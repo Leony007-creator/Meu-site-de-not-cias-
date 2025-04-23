@@ -1,24 +1,197 @@
-# Compiled class file
-*.class
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ViralNow - Notícias que Explodem na Web</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-# Log file
-*.log
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-# BlueJ files
-*.ctxt
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #ff6f61, #ff9a8b);
+      padding: 20px 10px;
+      text-align: center;
+    }
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+    header p {
+      font-size: 1rem;
+      color: #fff;
+      margin-top: 5px;
+    }
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+    /* Navegação */
+    nav {
+      background: #1e1e1e;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff6f61;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff9a8b;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #2c2c2c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(255, 111, 97, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ff6f61;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      color: #d3d3d3;
+    }
+
+    /* Footer */
+    footer {
+      background: #121212;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff6f61;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ff9a8b;
+    }
+
+    /* Botão de Chamada */
+    .cta-button {
+      display: inline-block;
+      background: #ff6f61;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #ff9a8b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>ViralNow</h1>
+    <p>Notícias que Explodem na Web</p>
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Tendências</a>
+    <a href="#">Esportes</a>
+    <a href="#">Entretenimento</a>
+    <a href="#">Política</a>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Imagem da Notícia">
+      <div class="card-content">
+        <h2>Título Impactante da Notícia</h2>
+        <p>Descrição breve e chamativa para atrair o leitor a clicar e saber mais.</p>
+        <a href="#" class="cta-button">Leia Mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Imagem da Notícia">
+      <div class="card-content">
+        <h2>Título Sensacionalista</h2>
+        <p>Outra descrição envolvente para capturar a atenção do público.</p>
+        <a href="#" class="cta-button">Leia Mais</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200" alt="Imagem da Notícia">
+      <div class="card-content">
+        <h2>Título Viral</h2>
+        <p>Mais um exemplo de conteúdo que vai viralizar rapidamente.</p>
+        <a href="#" class="cta-button">Leia Mais</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; 2025 Boo News | Desenvolvido com ❤️ por <a href="#">Seu Nome</a>
+  </footer>
+</body>
+</html>
+```
